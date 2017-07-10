@@ -11,6 +11,7 @@ import cssModules from 'react-css-modules';
 
 import Home from '../Home';
 import Dev from '../Dev';
+import Note from '../Note';
 
 import styles from './index.scss';
 
@@ -44,12 +45,19 @@ const Main = () => (
 							<span>Dev</span>
 						</Link>
 					</li>}
+					<li>
+						<Link to="/note">
+							<i className="fa fa-book" />{' '}
+							<span>Note</span>
+						</Link>
+					</li>
 				</ul>
 			</section>
 		</aside>
 		<div className="content-wrapper">
 			<Route exact path="/" component={Home} />
 			<Route exact path="/dev" component={Dev} />
+			<Route exact path="/note" component={Note} />
 		</div>
 		<footer className="main-footer clearfix">
 			<div className="pull-right hidden-xs">
