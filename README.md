@@ -1,7 +1,7 @@
-# Fairy - React Compnents
-React web component project.
+# React Component
+Fairy React web component project.
 It used in [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index.html) style.
-Online preview please click [here](https://github.com/cpp1992/Fairy).
+Online preview please click [here](https://cpp1992.github.io/fairy/).
 
 PS: latest version please check tag of this repo.
 
@@ -9,11 +9,11 @@ PS: latest version please check tag of this repo.
 ### How to use?
 
 
-**  NPM registry usage:** 
+**Taobao NPM registry usage:**
 
 1. you should change the yarn config default registry:
-      yarn : `yarn config set registry  http://registry.npm.taobao.org/`, then change the file .yarnrc directly
-      npm : `npm config set registry  http://registry.npm.taobao.org/ --global`
+      yarn : `yarn config set registry http://registry.npm.taobao.org/`, then change the file .yarnrc directly
+      npm : `npm config set registry http://registry.npm.taobao.org/ --global`
   (To check if you'v changed registry : yarn config get registry &&  npm config get registry )
    you can also use `yarn config get` to chanege the file `.npmrc`  directly.
 2. add in `package.json`:
@@ -21,7 +21,7 @@ PS: latest version please check tag of this repo.
 ...
   "dependencies": {
     "admin-lte": "^2.3.8",
-    "fairy": "1.9.0",
+    "fairy": "1.0.0",
     ...
   }
 ...
@@ -33,7 +33,7 @@ Add fairy github ssh URL  in `package.json`:
 ...
   "dependencies": {
     "admin-lte": "^2.3.8",
-    "fairy": "git+ssh://git@github.com:cpp1992/Fairy.git#v1.9.0",
+    "fairy": "git+ssh://git@github.com:cpp1992/Fairy.git#v1.0.0",
     ...
   }
 ...
@@ -50,7 +50,7 @@ Resolve dependency:
 
 **Possible Problems(npm install) :**
 
- 1. If you use `  NPM registry usage`,  `node-sass` may could not init successfully beacuse taobao registry doesn't have this module,you can use `npm config set registry http://registry.npm.taobao.org/`(yarn is the same) to install this module , Or you can use `SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ yarn add node-sass` ,it can also help you.
+ 1. If you use `NPM registry usage`,  `node-sass` may could not init successfully beacuse taobao registry doesn't have this module,you can use `npm config set registry http://registry.npm.taobao.org/`(yarn is the same) to install this module , Or you can use `SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ yarn add node-sass` ,it can also help you.
  2. If you use `Github usage`, `fairy` may seek err, you should check if you have set the right github URL, it should copy from the github [Pengpeng][1] and  you should not use any lock files such as `yarn.lock` and `npm.lock`
  3. Err:`cross-env is not recognized as an internal`, beacuse of the settings of yarn, when your installation it will may delete this module , solution: `npm install cross-env --save-dev`
 
@@ -124,16 +124,16 @@ Modify the version of `package.json`:
 ```json
 {
   ...
-  "version": "1.9.0",
+  "version": "1.0.0",
   ...
 }
 ```
 
 Mark the git tag of same version:  
-```git tag v1.9.0```
+```git tag v1.0.0```
 
 Push to the github:  
-```git push origin v1.9.0```
+```git push origin v1.0.0```
 
 
-  [1]: https://github.com/cpp1992/fairy
+  [1]: https://github.com/cpp1992/Fairy
