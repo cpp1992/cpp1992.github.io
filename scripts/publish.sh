@@ -28,15 +28,15 @@ npm run vendor
 npm run pages
 rm -rf /tmp/builds
 mv builds /tmp
-git checkout gh-pages
+git checkout master
 rm -rf ./builds
 mv /tmp/builds .
 git add .
-git commit -m "update pages"
+git commit -m "update pages(master)"
 git push
 
-echo "[Package] Back to master branch..."
-git checkout master
+echo "[Package] Back to src branch: subject ..."
+git checkout subject
 npm run vendor
 npm restart
 
