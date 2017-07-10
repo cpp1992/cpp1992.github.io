@@ -12,8 +12,7 @@
     "vendor": "webpack --config vendor.webpack.config.js",
     "grunt": "grunt",
     "dist": "cross-env NODE_ENV=production babel ./components -d ./dist/js && grunt",
-    "pages": "cross-env NODE_ENV=production webpack --config githubPages.webpack.config.js",
-    "vendorAll": "npm run vendor && npm run pages"
+    "pages": "npm run vendor && cross-env NODE_ENV=production webpack --config githubPages.webpack.config.js",
   },
   "main": "dist/js/",
   "repository": {
