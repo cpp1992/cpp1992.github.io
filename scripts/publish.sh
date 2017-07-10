@@ -24,8 +24,7 @@ echo "[NPM] NPM publish..."
 npm publish
 
 echo "[Package] Generate github page..."
-npm run vendor
-npm run pages
+npm run vendorAll
 rm -rf /tmp/builds
 mv builds /tmp
 git checkout master
