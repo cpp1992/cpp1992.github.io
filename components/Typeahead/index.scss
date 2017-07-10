@@ -1,0 +1,26 @@
+.typeAhead {
+	position: relative;
+
+	> .typeAhead-list {
+		position: absolute;
+		min-width: 100%;
+		top: 100%;
+		left: 0;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		background: #FFF;
+		border: 1px solid #d2d6de;
+		z-index: 10;
+
+		> li {
+			padding: 8px 15px;
+			cursor: default;
+
+			&:hover,
+			&.active {
+				background: #f4f4f4;
+			}
+		}
+	}
+}

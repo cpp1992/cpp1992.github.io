@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import "../common";
+
+.nav-tabs-custom {
+	position: relative;
+
+	.overlay {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		border-top-left-radius: 0;
+	}
+}
+
+.fry-tabs {
+	.tab-content > .tab-pane:not(.active) {
+		display: block;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.fry-tabs-tools {
+		@include tools-bar;
+	}
+}

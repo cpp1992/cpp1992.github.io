@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.fry-search-input {
+	position: relative;
+
+	input {
+		padding-left: 30px;
+	}
+
+	.fa {
+		position: absolute;
+		top: 9px;
+		left: 9px;
+		pointer-events: none;
+		color: #999;
+	}
+}

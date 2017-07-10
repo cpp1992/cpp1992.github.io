@@ -1,0 +1,32 @@
+.sort-table {
+	table > thead > tr > th.sortable {
+		position: relative;
+		padding-right: 15px;
+
+		&:after {
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			transform: translate(0, -50%);
+			font: normal normal normal 14px/1 FontAwesome;
+			content: "\f0dc";
+			color: rgba(0, 0, 0, 0.3);
+		}
+
+		&:hover:after {
+			color: rgba(0, 0, 0, 0.8);
+		}
+
+		&.up:after {
+			content: "\f0de";
+		}
+
+		&.down:after {
+			content: "\f0dd";
+		}
+	}
+
+	.pagination {
+		margin: 0;
+	}
+}

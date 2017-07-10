@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.fry-chart {
+	position: relative;
+
+	&.fry-chart-noSize {
+		height: 100%;
+	}
+
+	.fry-chart-content {
+		height: 100%;
+	}
+}
