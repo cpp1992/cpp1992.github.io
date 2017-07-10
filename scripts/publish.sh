@@ -14,27 +14,25 @@ rm -rf dist
 npm run dist
 
 echo "[Package] Git commit package..."
-git add .
+git add -A
 git commit -m "publish new version"
 git push
-git tag ${tag}
-git push origin ${tag}
 
 echo "[NPM] NPM publish..."
-npm publish
+git tag ${tag}
+git push origin ${tag}
 
 echo "[Package] Generate github page..."
 npm run vendor
 npm run pages
 rm -rf /tmp/builds
-mv builds /tmp
+cp builds/ tmp/ -r
 git checkout master
 rm -rf ./builds
 mv /tmp/builds .
 git add .
 git commit -m "update pages(master)"
 git push
-
 echo "[Package] Back to src branch: subject ..."
 git checkout subject
 npm run vendor
