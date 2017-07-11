@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+$buttonColor: #000;
+
+@mixin tools-bar {
+	position: absolute;
+	top: 0px;
+	right: 7px;
+	height: 38px;
+	display: flex;
+	align-items: center;
+
+	.form-group {
+		margin: 0;
+	}
+
+	button:not(.btn) {
+		margin-top: 1px;
+		background: transparent;
+		padding: 5px;
+		font-size: 12px;
+		height: 25px;
+		width: 25px;
+		border: 0;
+		color: rgba($buttonColor, 0.3);
+		outline: none;
+
+		&:hover {
+			color: rgba($buttonColor, 0.5);
+		}
+
+		&:active {
+			color: rgba($buttonColor, 0.8);
+		}
+	}
+
+	.btn {
+		margin-top: 1px;
+		padding: 0 5px;
+		height: 25px;
+		line-height: 23px;
+		font-size: 12px;
+	}
+
+	.btn + .btn,
+	.btn + button,
+	button + .btn,
+	button + button {
+		margin-left: 3px;
+	}
+
+	input, select {
+		width: initial;
+		display: inline-block;
+		padding: 0 5px;
+		height: 28px;
+	}
+
+	btn, input, select {
+		vertical-align: top;
+	}
+
+	.btn-group > button.btn {
+		margin: 0;
+	}
+}

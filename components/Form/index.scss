@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.fry-form {
+	.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+		margin-left: 15px;
+	}
+}

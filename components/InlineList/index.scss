@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.InlineList {
+	> li {
+		margin: 3px 5px;
+		padding: 3px 6px 4px 8px;
+		font-size: 14px;
+		line-height: 100%;
+		cursor: default;
+		white-space: normal;
+
+		> button {
+			color: inherit;
+			float: right;
+			cursor: pointer;
+			opacity: 0.6;
+			margin: 2px 0 0 5px;
+			padding: 0;
+			border: 0;
+			background: transparent;
+			outline: none;
+			font-size: 80%;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			&:active {
+				opacity: 0.3;
+			}
+
+			&.fa-ban {
+				&,
+				&:hover,
+				&:active {
+					cursor: pointer;
+					opacity: 0.3;
+				}
+			}
+		}
+	}
+}

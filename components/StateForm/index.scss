@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.fry-state-form {
+	.fry-state-form-list {
+		.fry-state-form-list-title {
+			display: inline-block;
+			max-width: 100%;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+
+		.fry-state-form-list-content {
+			border: 1px solid #DDD;
+			padding: 10px;
+			margin-bottom: 15px;
+
+			.fry-state-form-list-content-empty {
+				border-bottom: 1px solid #f4f4f4;
+				padding: 0 0 10px 0;
+			}
+		}
+	}
+}
