@@ -1,6 +1,6 @@
 {
-  "name": "Fairy",
   "version": "1.0.0",
+  "name": "Fairy",
   "description": "React Common Components library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

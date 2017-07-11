@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const packageJson = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
-const version = packageJson.version;
+const packageJson = fs.readFileSync('./package.json', 'utf8');
+const version = packageJson.substr(16, 5);
 console.log('[Package] Publish version:', version);
 
 console.log('[README] render template...');
