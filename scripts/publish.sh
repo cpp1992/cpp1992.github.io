@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 BLUE_COLOR='\E[1;34m'
-echo -e  "${BLUE_COLOR}----------------------------------------------${RES}"
+echo "----------------------------------------------"
 echo -e  "${BLUE_COLOR}[Publish] Start...${RES}"
 
 node ./scripts/generateReadMe.js;
