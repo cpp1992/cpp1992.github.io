@@ -6,3 +6,4 @@ process.pid
 version.tmp
 tmp/
 .eslintrc
+scripts/
