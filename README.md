@@ -21,7 +21,7 @@ PS: latest version please check tag of this repo.
 ...
   "dependencies": {
     "admin-lte": "^2.3.8",
-    "fairy": "1.0.0",
+    "fairy": "1.0.1",
     ...
   }
 ...
@@ -33,7 +33,7 @@ Add fairy github ssh URL  in `package.json`:
 ...
   "dependencies": {
     "admin-lte": "^2.3.8",
-    "fairy": "git+ssh://git@github.com:cpp1992/Fairy.git#v1.0.0",
+    "fairy": "git+ssh://git@github.com:cpp1992/Fairy.git#v1.0.1",
     ...
   }
 ...
@@ -124,16 +124,16 @@ Modify the version of `package.json`:
 ```json
 {
   ...
-  "version": "1.0.0",
+  "version": "1.0.1",
   ...
 }
 ```
 
 Mark the git tag of same version:  
-```git tag v1.0.0```
+```git tag v1.0.1```
 
 Push to the github:  
-```git push origin v1.0.0```
+```git push origin v1.0.1```
 
 
   [1]: https://github.com/cpp1992/Fairy
