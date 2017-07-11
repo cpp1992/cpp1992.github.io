@@ -27,9 +27,9 @@ echo "[Package] Generate github page new version: ${tag}";
 npm run vendor;
 npm run pages;
 rm -rf tmp/builds;
-cp builds tmp/ -r;
+cp builds tmp/ -r && git checkout master;
 
-git checkout master;
+
 rm -rf builds/;
 cp tmp/builds . -r;
 rm -rf tmp;
