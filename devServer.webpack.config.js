@@ -16,9 +16,7 @@ module.exports = {
 			!isProd ? 'react-hot-loader/patch' : null,
 			!isProd ? 'webpack-hot-middleware/client' : null,
 			'./src/index',
-		].filter(function (item) {
-			return item;
-		}),
+		].filter(item => item),
 	},
 
 	output: {
@@ -61,7 +59,7 @@ module.exports = {
 				test: /\.scss/,
 				loader: ExtractTextPlugin.extract(
 					'style-loader',
-					'css-loader?sourceMap&modules&importLoaders=1&localIdentName=fry_[local]_[hash:base64:5]!postcss-loader?sourceMap=inline!sass-loader?sourceMap'
+					'css-loader?sourceMap&modules&importLoaders=1&localIdentName=fry_[local]_[hash:base64:5]!postcss-loader?sourceMap=inline!sass-loader?sourceMap',
 				),
 				exclude: /components/,
 			},
@@ -69,7 +67,7 @@ module.exports = {
 				test: /\.scss/,
 				loader: isProd ? ExtractTextPlugin.extract(
 					'style-loader',
-					'css-loader?sourceMap&importLoaders=1&localIdentName=fry_[local]_[hash:base64:5]!postcss-loader?sourceMap=inline!sass-loader?sourceMap'
+					'css-loader?sourceMap&importLoaders=1&localIdentName=fry_[local]_[hash:base64:5]!postcss-loader?sourceMap=inline!sass-loader?sourceMap',
 				) : undefined,
 				loaders: !isProd ? [
 					'style-loader',
@@ -81,7 +79,7 @@ module.exports = {
 				test: /\.css/,
 				loader: ExtractTextPlugin.extract(
 					'style-loader',
-					'css-loader'
+					'css-loader',
 				),
 			},
 			{
@@ -92,7 +90,7 @@ module.exports = {
 				test: /\.(png|gif|jpe?g|svg)$/i,
 				loader: 'file?prefix=img/',
 			},
-		]
+		],
 	},
 
 	resolve: {
