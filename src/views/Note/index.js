@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
+import cssModules from 'react-css-modules';
 import $ from 'jquery';
 import { markdown } from 'markdown';
 
 import { Box, ButtonGroup, Button, A } from '../../../components';
 
+import { mdFilesRead } from '../../actions/md';
+
+import styles from './index.scss';
+
 class Note extends React.Component {
 	constructor() {
 		super();
 		this.state = {};
+	}
+
+	componentWillMount() {
+		const { dispatch } = this.props;
+		dispatch(mdFilesRead('maxiang'));
 	}
 
 	componentDidMount() {
@@ -48,6 +59,13 @@ class Note extends React.Component {
 }
 
 Note.propTypes = {
+	dispatch: PropTypes.func,
 };
 
-export default Note;
+const mapState = ({
+	mdfiles,
+}) => ({
+	mdfilesList: mdfiles,
+});
+
+export default connect(mapState)(cssModules(Note, styles));
