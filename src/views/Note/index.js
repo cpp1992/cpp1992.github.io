@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import cssModules from 'react-css-modules';
 import $ from 'jquery';
@@ -17,8 +18,8 @@ class Note extends React.Component {
 	}
 
 	componentWillMount() {
-		const { dispatch } = this.props;
-		dispatch(mdFilesRead('maxiang'));
+		//const { dispatch } = this.props;
+		//dispatch(mdFilesRead('maxiang'));
 	}
 
 	componentDidMount() {
@@ -26,7 +27,7 @@ class Note extends React.Component {
 	}
 
 	render() {
-		const $mdInter = markdown.toHTML('Hello *World*!');
+		const $mdInter = markdown.toHTML('*Coming Soon...*!');
 		const mdInterObj = {
 			__html: $mdInter,
 		}
