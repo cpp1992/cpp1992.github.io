@@ -7,8 +7,6 @@ import { markdown } from 'markdown';
 
 import { Box, ButtonGroup, Button, A } from '../../../components';
 
-import { mdFilesRead } from '../../actions/md';
-
 import styles from './index.scss';
 
 class Note extends React.Component {
