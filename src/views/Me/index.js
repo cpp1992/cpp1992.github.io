@@ -49,10 +49,25 @@ class Me extends React.Component {
 
 								<h1>基本信息</h1>
 
-								<p>
-									热爱前端、为人随和、学习能力强、合作意识强、富有吃苦耐劳的精神、学习勤快喜欢钻研。
-								</p>
+
 								<table className="table table-bordered">
+									<thead>
+										<tr>
+											<td width="50%">
+												<p>热爱前端</p>
+												<p>为人随和</p>
+												<p>学习能力强</p>
+												<p>合作意识强</p>
+												<p>富有吃苦耐劳的精神</p>
+												<p>学习勤快喜欢钻研</p>
+												<p>是的！就是我！</p>
+												<p>是的！就是左边这个小帅哥！发起进攻(　 ´-ω ･)▄︻┻┳══━一</p>
+											</td>
+											<td>
+												<img src="https://cpp1992.github.io/me.png" alt="我的照片" />
+											</td>
+										</tr>
+									</thead>
 									<tbody>
 									<tr>
 										<td>姓    名：程鹏鹏</td>
@@ -82,7 +97,13 @@ class Me extends React.Component {
 								</table>
 
 								<h1>求职意向</h1>
-								<p>前端工程师 毕业时间2018.3</p>
+								<pre>前端工程师 毕业时间2018.3</pre>
+
+								<h1>技能素质</h1>
+								<pre styleName="prebook">{`熟悉：HTML(5)、CSS(3)、原生js、jQuery、React、Git
+掌握：Bootstrap、HignCharts、Datatable
+了解：NodeJS、Vue、PHP、Python、D3、Angular2
+Github地址：https://github.com/cpp1992`}</pre>
 
 								<h1>项目、工作经历</h1>
 								<pre styleName="prebook">{`项目名称：eBay同构服务器管理系统
