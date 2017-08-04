@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.guide {
+  :global {
+    .box-body {
+      h1 {
+        color: darken(#3c8dbc, 5%);
+        font-size: 26px;
+        padding: 0;
+        margin-top: 50px;
+      }
+
+      h2 {
+        color: darken(#3c8dbc, 5%);
+        font-size: 22px;
+        padding: 0;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      table {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.prebook{
+  font-size: 16px;
+}
