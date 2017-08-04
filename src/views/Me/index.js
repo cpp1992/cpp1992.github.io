@@ -9,7 +9,7 @@ import { Box, ButtonGroup, Button, A } from '../../../components';
 
 import styles from './index.scss';
 
-class Note extends React.Component {
+class Me extends React.Component {
 	constructor() {
 		super();
 		this.state = {};
@@ -29,15 +29,12 @@ class Note extends React.Component {
 			<div>
 				<section className="content-header">
 					<h1>
-						Note
-						<small>This is a note page.</small>
+						我的简历
+						<small>有梦想就去追，别觉得累。</small>
 					</h1>
 				</section>
 				<section className="content">
-					<Box title="Button Group">
-						<p>Hello world</p>
-						<A href="https://github.com/evilstreak/markdown-js">https://github.com/evilstreak/markdown-js</A>
-						{$mdInter}
+					<Box title="个人简历">
 						<div dangerouslySetInnerHTML={mdInterObj} />
 					</Box>
 				</section>
@@ -46,7 +43,7 @@ class Note extends React.Component {
 	}
 }
 
-Note.propTypes = {
+Me.propTypes = {
 	dispatch: PropTypes.func,
 };
 
@@ -56,4 +53,4 @@ const mapState = ({
 	mdfilesList: mdfiles,
 });
 
-export default connect(mapState)(cssModules(Note, styles));
+export default connect(mapState)(cssModules(Me, styles));

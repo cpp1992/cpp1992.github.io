@@ -12,6 +12,7 @@ import cssModules from 'react-css-modules';
 import Home from '../Home';
 import Dev from '../Dev';
 import Note from '../Note';
+import Me from '../Me';
 
 import styles from './index.scss';
 
@@ -21,8 +22,8 @@ const Main = () => (
 	<div className="wrapper">
 		<header className="main-header">
 			<Link to="/" className="logo">
-				<span className="logo-mini">BC</span>
-				<span className="logo-lg">Fairy React</span>
+				<span className="logo-mini">Fairy</span>
+				<span className="logo-lg">Fairy 小仙女❥(^_-)</span>
 			</Link>
 			<nav className="navbar navbar-static-top">
 				<a className="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -36,7 +37,7 @@ const Main = () => (
 					<li>
 						<Link to="/">
 							<i className="fa fa-home" />{' '}
-							<span>Home</span>
+							<span>主页</span>
 						</Link>
 					</li>
 					{!isProd && <li>
@@ -46,9 +47,15 @@ const Main = () => (
 						</Link>
 					</li>}
 					<li>
+						<Link to="/me">
+							<i className="fa fa-user" />{' '}
+							<span>关于我</span>
+						</Link>
+					</li>
+					<li>
 						<Link to="/note">
 							<i className="fa fa-book" />{' '}
-							<span>Note</span>
+							<span>笔记本</span>
 						</Link>
 					</li>
 				</ul>
@@ -58,6 +65,7 @@ const Main = () => (
 			<Route exact path="/" component={Home} />
 			<Route exact path="/dev" component={Dev} />
 			<Route exact path="/note" component={Note} />
+			<Route exact path="/me" component={Me} />
 		</div>
 		<footer className="main-footer clearfix">
 			<div className="pull-right hidden-xs">
