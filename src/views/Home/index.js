@@ -43,7 +43,7 @@ class Home extends React.Component {
 		return (
 			<div>
 				<section className="content-header">
-					<h1>Components</h1>
+					<h1>Components(简历请见左侧"关于我")</h1>
 				</section>
 				<section className="content">
 					<div className="box box-primary">

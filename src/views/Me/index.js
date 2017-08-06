@@ -105,6 +105,13 @@ class Me extends React.Component {
 了解：NodeJS、Vue、PHP、Python、D3、Angular2
 Github地址：https://github.com/cpp1992`}</pre>
 
+								<h1>证书荣誉</h1>
+								<pre styleName="prebook">{`学校荣誉：南京师范大学“苏宁易购杯”编程大赛 一等奖
+南师大：校优秀毕业生、三好学生
+中科大：三好学生
+英语六级：468分
+学生干部：2011-2014  文体委员  2015-2016  文体委员`}</pre>
+
 								<h1>项目、工作经历</h1>
 								<pre styleName="prebook">{`项目名称：eBay同构服务器管理系统
 项目时间：2016/10-至今
@@ -138,7 +145,13 @@ Github地址：https://cpp1992.github.io/
 网上支付的诉求，专门设计的一种全新的互联网支付模式。
 个人职责：主要负责普通该版本全渠道无跳转支付接口的加密、验签、解密，demo 测
 试编写以及绝大部分代码实现，目前代码以及上线，详见：
-https://open.unionpay.com/ajweb/help/file/techFile?productId=2`}</pre>
+https://open.unionpay.com/ajweb/help/file/techFile?productId=2
+
+实习企业：腾讯
+项目名称：Nikki奇迹暖暖手游日服活动项目
+项目时间：2015/07-2016.10
+项目描述：腾讯上海游戏分部，奇迹暖暖游戏洽接部门。
+主要做一些UI交互，切图，用的是jQuery等技术做奇迹暖暖日本的主页。`}</pre>
 
 								<h1>一段有趣的代码</h1>
 								<pre styleName="prebook">
